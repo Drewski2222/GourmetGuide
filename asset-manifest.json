@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GourmetGuide/static/css/main.96331757.css",
-    "main.js": "/GourmetGuide/static/js/main.74ae9f0b.js",
+    "main.js": "/GourmetGuide/static/js/main.d3f02eb6.js",
     "static/js/239.7172428c.chunk.js": "/GourmetGuide/static/js/239.7172428c.chunk.js",
     "static/js/455.49a1b9d5.chunk.js": "/GourmetGuide/static/js/455.49a1b9d5.chunk.js",
     "static/js/488.16c6baff.chunk.js": "/GourmetGuide/static/js/488.16c6baff.chunk.js",
@@ -10,13 +10,13 @@
     "static/media/splash.png": "/GourmetGuide/static/media/splash.0a93c59fa152a64d6d0c.png",
     "index.html": "/GourmetGuide/index.html",
     "main.96331757.css.map": "/GourmetGuide/static/css/main.96331757.css.map",
-    "main.74ae9f0b.js.map": "/GourmetGuide/static/js/main.74ae9f0b.js.map",
+    "main.d3f02eb6.js.map": "/GourmetGuide/static/js/main.d3f02eb6.js.map",
     "239.7172428c.chunk.js.map": "/GourmetGuide/static/js/239.7172428c.chunk.js.map",
     "455.49a1b9d5.chunk.js.map": "/GourmetGuide/static/js/455.49a1b9d5.chunk.js.map",
     "488.16c6baff.chunk.js.map": "/GourmetGuide/static/js/488.16c6baff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.96331757.css",
-    "static/js/main.74ae9f0b.js"
+    "static/js/main.d3f02eb6.js"
   ]
 }
