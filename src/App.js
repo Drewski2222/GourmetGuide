@@ -9,8 +9,8 @@ import img2 from "./Chef_icon.svg.png";
 import img3 from "./splash.png";
 
 const HomePage = ({ onGetStarted }) => (
-  <div className="min-h-screen bg-blue-900 text-white p-8">
-    <div className="container mx-auto">
+  <div className="min-h-screen bg-blue-900 text-white p-8 flex flex-col">
+    <div className="container mx-auto flex-grow">
       <h1 className="text-4xl font-bold mb-4">Gourmet Guide 🧑‍🍳</h1>
       <div className="mb-8">
         <p className="mb-2">Get a fully personalized 3-meal per day plan for as many days as you'd like!</p>
@@ -19,9 +19,9 @@ const HomePage = ({ onGetStarted }) => (
         <p className="mb-2">Spend less time stressing about meal prep!</p>
       </div>
       <div className="grid grid-cols-3 gap-3 mb-8">
-      <img src={img1} style={{width: 250, height: 250}} alt="Food Picture 1"></img>
-        <img src={img2} style={{width: 250, height: 250}} alt="Food Picture 2"></img>
-        <img src={img3} style={{width: 250, height: 250}} alt="Food Picture 3"></img>
+        <img src={img1} style={{ width: 250, height: 250 }} alt="Food Picture 1" />
+        <img src={img2} style={{ width: 250, height: 250 }} alt="Food Picture 2" />
+        <img src={img3} style={{ width: 250, height: 250 }} alt="Food Picture 3" />
       </div>
       <button
         onClick={onGetStarted}
@@ -30,8 +30,12 @@ const HomePage = ({ onGetStarted }) => (
         Get Started
       </button>
     </div>
+    <footer style={{ textAlign: 'center', marginTop: '20px' }}>
+      &copy; 2024 Drew Reisner
+    </footer>
   </div>
 );
+
 
 const MealPlanContent = styled.div`
   h2 {
@@ -148,7 +152,8 @@ const MainScreen = ({ onGourmetGuideClick }) => {
   };
 
   return (
-    <div className="min-h-screen bg-blue-900 text-white p-8">
+    <div className="min-h-screen bg-blue-900 text-white p-8 flex flex-col">
+      <div className="container mx-auto flex-grow">
       <div className="container mx-auto">
         <h1
           onClick={onGourmetGuideClick}
@@ -201,7 +206,7 @@ const MainScreen = ({ onGourmetGuideClick }) => {
                 <span style={{ color: 'gray' }}>Your meal plan will appear here. Click "Create Meal Plan" below!</span>
               )}
             </MealPlanContent>
-            <h3 className="text-2x1 mt-4">Note: Calorie count be inaccurate.</h3>
+            <h3 className="text-2x1 mt-4">Note: Calorie count may be inaccurate.</h3>
             {mealPlan && (
               <div className="mt-4">
                 <p className="mb-5">
@@ -225,6 +230,10 @@ const MainScreen = ({ onGourmetGuideClick }) => {
           </div>
         </div>
       </div>
+      </div>
+      <footer style={{ textAlign: 'center', marginTop: '20px' }}>
+        &copy; 2024 Drew Reisner
+      </footer>
     </div>
   );
 };
