@@ -86,7 +86,7 @@ app.post('/generate-meal-plan-from-image', upload.single('image'), async (req, r
 
         const completion = await openai.chat.completions.create({
             messages: [{ role: "user", content: prompt }],
-            model: "gpt-4o-2024-05-13",
+            model: "gpt-4o-mini",
         });
 
         const markdownContent = completion.choices[0].message.content;
