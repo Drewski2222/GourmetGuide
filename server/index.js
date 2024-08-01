@@ -33,7 +33,7 @@ app.post('/generate-meal-plan', async (req, res) => {
     
         const completion = await openai.chat.completions.create({
           messages: [{ role: "user", content: prompt }],
-          model: "gpt-4o-2024-05-13",
+          model: "gpt-4o-mini",
         });
     
         const markdownContent = completion.choices[0].message.content;
@@ -57,7 +57,7 @@ app.post('/generate-meal-plan-from-image', upload.single('image'), async (req, r
 
         // Use OpenAI's vision model to analyze the image
         const response = await openai.chat.completions.create({
-            model: "gpt-4o-2024-05-13",
+            model: "gpt-4o-mini",
             messages: [
                 {
                     role: "user",
