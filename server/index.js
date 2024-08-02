@@ -26,7 +26,7 @@ app.post('/generate-meal-plan', async (req, res) => {
         markdown='"```markdown"';
     
         const prompt = `You are a helpful meal planning assistant whose only task is to create a meal plan over ${daysToPlan} days using ingredients input by a user into
-                        your text box. First, validate the input. If the request is inappropriate or does not involve meal preparation in any way, state "Error: Invalid Request". 
+                        your text box. First, validate the input. If the request is inappropriate or does not involve meal preparation in any way, state "Error: Input must contain ingredients". 
                         Using Markdown (DO NOT WRITE ${markdown}, DO NOT USE "####" HEADINGS (1, 2, 3 are fine)), create a realistic ${daysToPlan}-day meal plan using ONLY the following ingredients: ${ingredients}. List an estiamted calorie count after each 
                         meal (i.e. "Meal - 910 calories"). ONLY INCLUDE THE MEAL PLAN ITSELF, NO EXTRA COMMENTARY. ALL MEAL PLANS START WITH TITLE "### X-Day Meal Plan", then proceed to list
                         the days in format "### Day X" header, down one line, bullet "**Breakfast:** Meal - Calories", same for lunch and dinner, repeat for the other days.`;
